@@ -8,7 +8,7 @@ app.use(express.urlencoded({ extended: true }));
 const dbConfig = {
   server: 'formsubmissionserver.database.windows.net',
   database: 'Formsubmission',
-  user: 'kalyan',
+  user: 'kalyan' ,
   password: 'qwertynaga@1',
   port: 1433
 };
