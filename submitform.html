@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            height: 100vh;
+            margin: 0;
+            background-size: cover;
+            background-image: linear-gradient(to right, blue, white);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        form {
+            background: white;
+            padding: 2em;
+            border-radius: 1em;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        input[type="text"], input[type="submit"] {
+            display: block;
+            width: 100%;
+            padding: 1em;
+            margin-bottom: 1em;
+            border-radius: 0.5em;
+            border: 1px solid #ddd;
+        }
+
+        input[type="submit"] {
+            background: blue;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background: darkblue;
+        }
+    </style>
+</head>
+<body>
+
+<h2>Submit Form</h2>
+
+<form action="/submitForm" method="post">
+  <label for="fname">First name:</label><br>
+  <input type="text" id="fname" name="fname"><br>
+  <label for="lname">Last name:</label><br>
+  <input type="text" id="lname" name="lname"><br><br>
+  <input type="submit" value="Submit">
+</form>
+
+</body>
+</html>
